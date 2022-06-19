@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #5e5959;
+    --primary-font: sans-serif;
+}
+
+p{
+    color: var(--primary-color);
+}
+a{
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1700px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px -12px 20px 5px var(--primary-color);
+    z-index: 999;
+    background-color: #fff;
+}
+
+header .container {
+    max-width: 1100px;
+    margin: 0px auto;
+    height: 100px;
+}
+header a{
+    color: black;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+header ul li a:hover{
+    border-bottom: 2px solid var(--primary-color);
+
+}
+header .flex {
+    justify-content: space-between;
+}
+
+.hero{
+    margin: 250px auto 100px auto;
+    text-align: center;
+    max-width: 600px;
+}
+main .hero h1{
+    font-size: 3.8rem;
+    margin-bottom: 50px;
+}
+main .hero p{
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+}
+.grid{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 60px;
+    justify-items: center;
+}
+.blog-img{
+    max-width: 100%;
+}
+.blog-h2{
+    margin: 10px 0 20px 0;
+    font-size: 1.7rem;
+    
+}
+.blog-par{
+    color: var(--primary-color);
+    margin: 10px 0;
+    font-family: var(--primary-font);
+    max-width: 500px;
+}
+.blog-span{
+    color: var(--primary-color);
+}
+main .flex{
+    padding-top: 80px;
+}
+main .flex a:hover{
+    background-color: rgb(61, 59, 59);
+}
+.cta{
+    background-color: rgb(240, 230, 220);
+    padding: 100px 30px 100px 0;
+    margin: 100px auto;
+    width: 100%;
+}
+.cta .flex .text{
+    padding-left: 40px;
+    width: 550px;
+}
+.cta .text h1{
+    font-size: 3rem;
+    padding: 80px 0 40px 0;
+    margin-right: 120px;
+    
+}
+.cta .text p{
+    font-family: var(--primary-font);
+    padding-bottom: 70px;
+    font-size: 18px;
+    max-width: 400px;
+}
+.cta-a{
+    padding: 20px 40px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+.cta a:hover{
+    background-color: rgb(61, 59, 59);;
+}
+.insta-h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.insta-img{
+    width: 80%;
+    margin: 0 auto 40px auto;
+}
+
+
+.insta-images{
+    padding: 20px;
+    width: 250px;
+}
+footer{
+    max-width: 1750px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgb(240, 230, 220);
+}
+footer .newsletter{
+    margin-top: 80px;
+    padding: 100px 0 50px 0;
+    text-align: center;
+    
+}
+.newsletter-h2{
+    font-size: 2rem;
+    padding-bottom: 40px;
+}
+.newsletter-par{
+    font-size: 20px;
+    color: #292929;
+    margin: 0 0 8px 35px;
+}
+footer input{
+    width: 300px;
+    padding: 10px 10px;
+    border: none;
+    margin: 0 0 50px 35px;
+}
+footer .cta-a:hover{
+    background-color: rgb(61, 59, 59);
+}
+.footer-par{
+    padding: 30px 0 50px 0;
+}
+footer .newsletter .cta-a{
+    margin: 0 110px;
+}
+.social{
+    max-width: 80px;
+    margin-top: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+    
+}
+.footer-text{
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .cta .flex{
+        flex-direction: column;
+    }
+    .cta-img{
+        width: 90vw;
+        margin: 60px auto;
+    }
+    .cta .text h1{
+        margin: 0 60px 0 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .cta .text p{
+        margin: 0 60px 0 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .cta .text .go-to-shop{
+        max-width: 160px;
+        margin: 0 0 0 170px;
+    }
+    .insta-img{
+    flex-direction:column;
+    }
+    .insta-images{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    header{
+        height: 200px;
+    }
+    header .flex{
+        flex-direction: column;
+        padding: 20px
+    }
+    header .flex nav .flex li{
+    padding: 4px;
+    }
+}
