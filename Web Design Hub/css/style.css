@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+p{
+    line-height: 1.8rem;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    max-width: 1800px;
+    margin: auto;
+    background-color: #35424a;
+    color: #e8491d;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:3px solid #e8491d;
+}
+
+header .flex{
+    max-width: 1400px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+header a:hover{
+    color: #e77859;
+}
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+header nav .current a:hover{
+    color: #e48e76;
+}
+.main{
+    max-width: 1800px;
+    min-height: 550px;
+    margin: auto;
+    background-image: url(../img/showcase.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main .container h1{
+    color: #fff;
+    padding: 170px 0 40px 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main .container p{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.main .flex{
+    flex-direction: column;
+}
+.main .container a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #e8491d;
+    margin-top: 60px;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+}
+
+.main .container a:hover{
+    color: black;
+}
+
+.newsletter{
+    max-width: 1800px;
+    margin: auto;
+    background-color: #565c61;
+    min-height:180px;
+    border-bottom:3px solid #e8491d;
+    
+}
+.newsletter .flex{
+    padding-top: 75px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.newsletter .flex h2{
+    color: #fff;
+}
+
+.newsletter .flex form input{
+    padding: 10px 10px;
+    width: 250px;
+    border: none;
+    border-radius: 3px;
+    
+}
+.newsletter .flex form a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #e8491d;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+}
+
+.newsletter .flex form a:hover{
+    color: black;
+}
+
+.boxes{
+    max-width: 1800px;
+    margin: auto;
+}
+
+.boxes .flex{
+    justify-content: center;
+    padding: 80px 0;
+    flex-wrap: wrap;
+}
+
+.boxes .flex .box{
+    text-align: center;
+    width: 300px;
+    height: 390px;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px black ;
+}
+
+.boxes .flex .box img{
+    width: 130px;
+    padding: 30px 20px;
+}
+
+.boxes .flex .box p{
+    padding: 20px 10px 80px 10px;
+}
+
+footer{
+    max-width: 1800px;
+    margin: auto;
+    background-color: #35424a;
+    color: #fff;
+    height: 100px;
+}
+
+.main1{
+    padding: 50px 0;
+    max-width: 1800px;
+    margin: auto;
+}
+.main1 .flex{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    flex-wrap: nowrap;
+
+}
+
+.dark{
+    background-color: #35424a;
+    padding: 20px;
+    color: #fff;
+}
+.main-col .dark{
+    margin-top: 30px ;
+
+}
+.main-col{
+    padding-right: 50px;
+    width: 2800px;
+}
+.about{
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+}
+.aside{
+    width: 1500px;
+}
+.aside .dark h2{
+    padding: 20px 0;
+}
+
+.services{
+    max-width: 1800px;
+    margin: auto;
+}
+.services .container .services-h1{
+    padding: 80px 0 30px 0;
+    font-size: 2.5rem;
+}
+.boxes .flex .box p a{
+    text-decoration: none;
+    color: #e8491d;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 750px){
+    header{
+        height:90px;
+    }
+    header .flex{
+        justify-content: center;
+        
+    }
+    header .highlight{
+        margin-bottom: 10px;
+        text-align:center;
+    }
+    header ul a{
+        justify-content:center;
+    }
+
+
+    .main .flex a{
+        margin-bottom:150px;
+    }
+    .boxes .flex .box{
+        margin-bottom:50px;
+        height:fit-content;
+    }
+    .newsletter .flex{
+        justify-content:center;
+    }
+    .newsletter .flex form{
+        display:flex;
+        flex-direction:column;
+        align-items :center;
+    }
+    .newsletter .flex form input{
+        margin:20px 0 10px 0;
+        width:60vw;
+    }
+    .newsletter .flex form a{
+        margin-bottom:70px;
+    }
+    .newsletter .flex h2{
+        text-align:center;
+    }
+    .main1 .flex{
+        flex-wrap: wrap;
+    }
+    .main-col .dark{
+        margin-bottom: 30px;
+    }
+    .main1 .flex{
+        text-align: center;
+        width: 80%;
+    }
+    .main1 .flex .main-col{
+        padding-right: 0px;
+    }
+    .services .container{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+     header .flex nav li a{
+         display: flex;
+     }
+     header{
+         height: inherit;
+     }
+     footer .footer-text{
+         text-align:center;
+         padding:20px;
+     }
+}
