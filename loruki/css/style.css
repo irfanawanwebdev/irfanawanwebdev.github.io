@@ -73,7 +73,8 @@ p {
 .btn:hover {
     transform: scale(.95);
 }
-.box{
+
+.box {
     background-color: #fff;
     width: 400px;
     border-radius: 10px;
@@ -147,13 +148,14 @@ section.main .grid .text {
 }
 
 @keyframes lefttoright {
-    0%{
+    0% {
         transform: translateX(-500px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
-    
+
 }
 
 .main .grid .box {
@@ -169,13 +171,14 @@ section.main .grid .text {
 }
 
 @keyframes righttoleft {
-    0%{
+    0% {
         transform: translateX(500px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
-    
+
 }
 
 
@@ -219,19 +222,21 @@ section.main::after {
     left: 0;
     right: 0;
 }
+
 @keyframes bottomtotop {
-    0%{
+    0% {
         transform: translateY(500px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
-    
+
 }
 
 /* stats section */
 
-section.stats{
+section.stats {
     padding-top: 50px;
     max-width: 1500px;
     margin: 0 auto;
@@ -241,64 +246,69 @@ section.stats{
     animation-timing-function: linear;
 }
 
-section.stats .container h2{
+section.stats .container h2 {
     text-align: center;
     width: 650px;
     font-weight: bold;
     margin: 3rem auto;
 }
 
-section.stats .container .grid{
+section.stats .container .grid {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     text-align: center;
 }
 
-section.stats .container .grid .stats-data h3{
+section.stats .container .grid .stats-data h3 {
     font-weight: bolder;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-section.stats .container .grid .stats-data p{
+section.stats .container .grid .stats-data p {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--secondary-color);
 }
-section.stats .container .grid .stats-data i{
+
+section.stats .container .grid .stats-data i {
     margin: 20px;
 }
 
 /* cli section */
 
-section.cli{
+section.cli {
     max-width: 1500px;
     margin: auto;
 
 }
-.cli .grid{
+
+.cli .grid {
     margin: 80px auto;
     padding: 0 30px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;
     align-items: center;
     justify-content: center;
-    grid-template-areas: 
-    "cli cli easy"
-    "cli cli deploy"
+    grid-template-areas:
+        "cli cli easy"
+        "cli cli deploy"
     ;
 }
-.cli .grid .cli-img{
+
+.cli .grid .cli-img {
     grid-area: cli;
     width: 500px;
 }
-.cli .grid .cli1{
+
+.cli .grid .cli1 {
     grid-area: easy;
     padding: 20px 20px;
     margin-top: 50px;
     width: fit-content;
 }
-.cli .grid .cli2{
+
+.cli .grid .cli2 {
     grid-area: deploy;
     padding: 20px 20px;
     margin-top: 50px;
@@ -307,40 +317,43 @@ section.cli{
 
 /* cloud section */
 
-section.cloud{
+section.cloud {
     background-color: var(--primary-color);
     max-width: 1500px;
     margin: auto;
 
 }
 
-section.cloud .flex{
+section.cloud .flex {
     padding: 20px 0;
     justify-content: space-between;
     margin-bottom: 50px;
 }
-section.cloud .flex .cloud-text{
+
+section.cloud .flex .cloud-text {
     max-width: 600px;
     flex-direction: column;
 }
 
-section.cloud .flex .cloud-text h1{
+section.cloud .flex .cloud-text h1 {
     color: var(--light-color);
     font-size: 3rem;
     padding-bottom: 20px;
     text-align: center;
 }
-section.cloud .flex .cloud-text p{
+
+section.cloud .flex .cloud-text p {
     color: var(--light-color);
     font-size: 1.2rem;
     text-align: center;
 }
 
 
-section.cloud .flex img{
+section.cloud .flex img {
     width: 400px;
 }
-section.cloud .flex .cloud-text .btn{
+
+section.cloud .flex .cloud-text .btn {
     background-color: var(--dark-color);
     padding: 15px 30px;
     border-radius: 5px;
@@ -349,23 +362,24 @@ section.cloud .flex .cloud-text .btn{
 
 /* language section */
 
-section.language{
+section.language {
     max-width: 1500px;
     margin: auto;
     padding-bottom: 50px;
 }
 
-section.language .container h1{
+section.language .container h1 {
     padding-bottom: 40px;
     text-align: center;
     font-size: 2rem;
 }
-section.language .container .flex{
+
+section.language .container .flex {
     height: 100%;
     flex-wrap: wrap;
 }
 
-section.language .container .flex .box{
+section.language .container .flex .box {
     width: fit-content;
     padding: 15px;
     text-align: center;
@@ -373,105 +387,116 @@ section.language .container .flex .box{
     transition: .4s ease;
 }
 
-section.language .container .flex .box:hover{
+section.language .container .flex .box:hover {
     transform: translateY(-15px);
 }
-section.language .container .flex .box h3{
+
+section.language .container .flex .box h3 {
     padding-bottom: 10px;
     font-weight: bold;
 }
 
 /* footer */
 
-footer{
+footer {
     max-width: 1500px;
     margin: auto;
     background-color: var(--dark-color);
-    
+
 }
-footer .flex{
+
+footer .flex {
     padding: 50px 0;
     justify-content: space-evenly;
     color: var(--light-color);
     flex-wrap: wrap;
 }
-footer .flex .social a{
+
+footer .flex .social a {
     color: #fff;
     padding: 10px;
-    
+
 }
-footer .flex .social a i{
+
+footer .flex .social a i {
     margin: 20px 10px 20px;
 
 }
-footer .flex .social{
+
+footer .flex .social {
     margin: 20px;
 }
-footer .flex .social a:hover{
+
+footer .flex .social a:hover {
     color: var(--primary-color);
 }
 
 
-footer .flex .copy h1{
+footer .flex .copy h1 {
     padding-bottom: 10px;
 }
-footer .flex .navbar ul li{
+
+footer .flex .navbar ul li {
     list-style: none;
     padding: 5px;
 }
-footer .flex .navbar ul li a{
+
+footer .flex .navbar ul li a {
     color: var(--light-color);
 }
 
 /* features */
 
-section.features{
+section.features {
     max-width: 1500px;
     margin: auto;
     background-color: var(--primary-color);
     height: 300px;
 }
 
-section.features .grid{
+section.features .grid {
     padding: 30px 0;
     grid-template-columns: 60% auto;
     justify-content: space-between;
 }
 
-section.features .grid .text{
+section.features .grid .text {
     color: var(--light-color);
     padding-right: 20px;
 }
-section.features .grid .text h1{
+
+section.features .grid .text h1 {
     font-size: 3rem;
     padding-bottom: 20px;
 }
 
-section.features .grid .text p{
+section.features .grid .text p {
     font-size: 1.3rem;
 }
 
-section.features .grid img{
+section.features .grid img {
     max-width: 200px;
 }
 
 /* platform */
 
-section.platform{
+section.platform {
     max-width: 1500px;
     margin: auto;
     background-color: rgb(241, 237, 237);
 }
 
-section.platform .grid{
+section.platform .grid {
     padding: 20px 0;
     grid-template-columns: 50% auto;
     justify-content: space-between;
 }
-section.platform .grid img{
+
+section.platform .grid img {
     max-width: 350px;
 }
-section.platform .grid .platform-text h1{
+
+section.platform .grid .platform-text h1 {
     font-size: 2rem;
     padding-bottom: 20px;
 
@@ -479,46 +504,52 @@ section.platform .grid .platform-text h1{
 
 /* grid section */
 
-section.grid-boxes{
+section.grid-boxes {
     max-width: 1500px;
     margin: auto;
     padding: 100px 0;
 }
-section.grid-boxes .grid1{
+
+section.grid-boxes .grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 150px);
     grid-gap: 30px;
     grid-template-areas:
-    "a a a"
-    "b b c"
-    "d e f"
+        "a a a"
+        "b b c"
+        "d e f"
     ;
 }
 
-.grid-box1{ 
+.grid-box1 {
     grid-area: a;
 }
-.grid-box2{
+
+.grid-box2 {
     grid-area: b;
 }
-.grid-box3{
+
+.grid-box3 {
     grid-area: c;
-    
+
 }
-.grid-box4{
+
+.grid-box4 {
     grid-area: d;
-    
+
 }
-.grid-box5{
+
+.grid-box5 {
     grid-area: e;
 }
 
-.grid-box6{
+.grid-box6 {
     grid-area: f;
 
 }
-section.grid-boxes .grid1 .shadow{
+
+section.grid-boxes .grid1 .shadow {
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -527,83 +558,89 @@ section.grid-boxes .grid1 .shadow{
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .4);
 }
-section.grid-boxes .grid1 .shadow i{
+
+section.grid-boxes .grid1 .shadow i {
     padding-right: 20px;
 }
 
 /* essential */
 
-section.essential{
+section.essential {
     max-width: 1500px;
     margin: auto;
     padding: 50px;
 }
-section.essential .grid{
+
+section.essential .grid {
+    height: 100%;
     grid-gap: 30px;
-    grid-template-columns:  40% auto;
+    grid-template-columns: 40% auto;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-section.essential .grid aside{
+section.essential .grid aside {
     width: 320px;
     padding: 30px;
     background-color: rgb(237, 236, 236);
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .4);
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-section.essential .grid h2{
+section.essential .grid h2 {
     margin: 30px 0 20px 0;
     font-weight: bold;
 }
-section.essential .grid aside a{
+
+section.essential .grid aside a {
     color: var(--text-color);
 }
-section.essential .grid aside a:hover{
-    font-weight: bold;   
+
+section.essential .grid aside a:hover {
+    font-weight: bold;
 }
 
-section.essential .grid aside li{
+section.essential .grid aside li {
     padding: 10px 0;
     border-bottom: 1px solid rgba(0, 0, 0, .4);
 }
 
-section.essential .intro{
+section.essential .intro {
     padding: 30px 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .4);
 }
 
-section.essential .intro h1{
+section.essential .intro h1 {
     padding: 20px 0;
 }
-section.essential .intro .green{
+
+section.essential .intro .green {
     background-color: var(--success-color);
     color: var(--light-color);
     font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-section.essential .intro .green i{
+
+section.essential .intro .green i {
     padding: 20px;
 }
-section.essential .intro p{
+
+section.essential .intro p {
     padding: 10px 0;
     margin: 20px 0;
 }
 
-section.essential .intro code{
+section.essential .intro code {
     color: var(--light-color);
     background-color: var(--text-color);
-    padding: 20px; 
+    padding: 20px;
     display: inline-block;
     width: 350px;
     margin: auto;
 }
-
-
