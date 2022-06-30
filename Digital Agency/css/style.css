@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container2{
+    background-image: url(../img/pawel-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+
+}
+header nav{
+    width: 100%;
+    padding: 0px 10px;
+    max-width: 1196px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo img{
+    max-width: 200px;
+    cursor: pointer;
+    margin: 5vh 3vh;
+}
+
+header nav .navlinks ul{
+    display: flex;
+}
+header nav .navlinks ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+header nav .navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+header nav .search{
+    padding: 0 30px;
+}
+header nav .search input{
+    outline: none;
+    text-align: right;
+    width: 16vw;
+    padding: .3em 1em;
+    font-weight: bolder;
+    border: 2px solid rgb(27, 208, 244);
+    background: none;
+    color: white;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+.container{
+    padding: 0 1.5rem;
+    max-width:900px;
+    margin: 0 20rem;
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+.container .col1 h1{
+    font-size: 2.6rem;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+.container .col1 p{
+    color: white;
+    margin-bottom: 4rem;
+}
+.container .col1 .content .button{
+    background-color: rgb(27, 208, 244);
+    padding: .5rem 1rem;
+    font-weight: bolder;
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+}
+.container .col1 .social{
+    margin-top: 4rem;
+}
+.container .col1 .social a{
+    padding: .7rem;
+    text-decoration: none;
+}
+.container .col1 .social a span img{
+    max-width: 2.5rem;
+}
