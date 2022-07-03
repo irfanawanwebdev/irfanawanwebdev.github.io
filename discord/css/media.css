@@ -1,0 +1,200 @@
+@media screen and (max-width:1050px) {
+    .container {
+        width: 90%;
+    }
+
+    .main .container .btn {
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width:950px) {
+    .main {
+        background-image: url(../img/bg-img3.svg), url(../img/bg-img1.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right -200px bottom, bottom;
+        background-size: 500px, cover;
+    }
+
+    .main .container {
+        text-align: left;
+        width: 650px;
+        margin-left: 5rem;
+    }
+
+    .main .container .btn {
+        align-items: flex-start;
+    }
+
+    .main .container .btn .sec-btn {
+        margin: 1rem 0;
+    }
+
+    .study-group .flex {
+        flex-direction: column;
+    }
+
+    .voice-connected .flex {
+        flex-direction: column-reverse;
+    }
+
+    .chill .flex img {
+        width: 90vw;
+    }
+
+    .study-group .flex .text {
+        max-width: 500px;
+    }
+
+    footer .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "social-main social-main product company"
+            "social-main social-main resources policies"
+        ;
+    }
+
+    footer .grid .social-main {
+        grid-area: social-main;
+        margin: auto;
+
+    }
+
+}
+
+
+@media screen and (max-width:880px) {
+    header .flex {
+        height: fit-content;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .flex .logo h1 {
+        margin-bottom: 0px;
+    }
+
+    header .flex nav .flex {
+        flex-direction: row;
+    }
+
+    .main {
+        height: 700px;
+        background-position: right -100px bottom, bottom;
+    }
+
+    .main .container h1 {
+        font-size: 3rem;
+    }
+
+    .main .container {
+        width: 80vw;
+    }
+
+    .study-group .flex img {
+        max-width: 500px;
+    }
+
+    footer .grid {
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "social-main social-main"
+            "product company"
+            "resources policies"
+        ;
+    }
+
+}
+
+@media screen and (max-width:620px) {
+    body {
+        font-size: 1rem;
+    }
+    header .flex .logo{
+        display: flex;
+    }
+    header .flex .logo .menu-img{
+        display: block;
+        width: 30px;
+        margin: 25px 0 0 30vw;
+        cursor: pointer;
+    }
+    header .flex nav,
+    header .flex .login-btn{
+        display: none;
+    }
+
+    .main {
+        height: 720px;
+        margin-left: -3rem;
+    }
+
+    .main .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main .container .btn .btn-hover {
+        display: none;
+    }
+
+    .main .container .btn .btn-android {
+        display: inline-block;
+        visibility: visible;
+        position: relative;
+    }
+
+    .main .container h1 {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .main .container .btn .sec-btn {
+        visibility: hidden;
+    }
+
+    .study-group .flex img {
+        max-width: 600px;
+    }
+
+    .study-group .flex img {
+        max-width: 90vw;
+    }
+
+    .main .container {
+        width: auto;
+        padding-right: 1rem;
+    }
+
+    .study-group .flex .text h1 {
+        font-size: 2rem;
+    }
+
+    .chill .flex h1 {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .chill .flex {
+        text-align: left;
+    }
+
+    .download .flex .primary-btn {
+        display: none;
+    }
+
+    .download .flex .btn-android {
+        display: inline-block;
+        position: relative;
+        visibility: visible;
+    }
+
+}

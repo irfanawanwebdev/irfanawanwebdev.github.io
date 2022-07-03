@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+:root {
+    --brand: #5865f2;
+    --greyple: #99aab5;
+    --dark-not-black: #2c2f33;
+    --focus-border: #00b0f4;
+    --status-green: #43b581;
+    --text-link: #00b0f4;
+    --off-white: #f6f6f6;
+    --white: #fff;
+    --not-quite-black: #23272a;
+    --not-quite-black-rgb: 35, 39, 42;
+    --black: #000;
+}
+
+/* utilities */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 2rem;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.primary-btn {
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    padding: .7rem 1.5rem;
+    border-radius: 30px;
+}
+
+
+/* header */
+
+header {
+    max-width: 1500px;
+    margin: auto;
+    background-color: rgb(68, 68, 234);
+}
+
+header .flex {
+    height: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .flex .logo h1 {
+    color: var(--white);
+    min-width: 100px;
+    cursor: pointer;
+}
+header .flex .logo .menu-img{
+    display: none;
+}
+header .flex .logo h1 .discord-logo{
+    width: 40px;
+}
+
+header .flex .logo img {
+    max-width: 100px;
+    display: inline-block;
+}
+
+header .flex nav .flex li {
+    padding: 1rem;
+    font-weight: 400;
+}
+
+header .flex .primary-btn {
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    padding: .7rem 1.5rem;
+    border-radius: 30px;
+}
+
+header .flex .login-btn {
+    color: var(--black);
+    transition: .4s ease-in-out;
+}
+
+header ul li a {
+    padding: 5px 0;
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid var(--off-white);
+}
+
+header .flex .login-btn:hover {
+    color: var(--text-link);
+}
+
+/* main */
+
+.main {
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 500px;
+    background-color: rgb(68, 68, 234);
+    background-image: url(../img/bg-img2.svg), url(../img/bg-img3.svg), url(../img/bg-img1.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left -200px bottom, right -200px bottom, bottom;
+    background-size: 500px, 500px, cover;
+}
+
+.main .container {
+
+    padding-top: 40px;
+    color: var(--white);
+    width: 700px;
+}
+
+.main .container h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.main .container .btn a {
+    color: var(--black);
+}
+
+.main .container .btn {
+    margin: 2rem auto;
+    display: block;
+}
+
+.main .container .btn .sec-btn {
+    background-color: var(--dark-not-black);
+    margin: 1rem;
+    color: var(--white);
+    transition: .4s ease-in-out;
+}
+
+.main .container .btn .sec-btn:hover {
+    background-color: rgb(69, 68, 68);
+}
+
+.main .container .btn .btn-hover {
+    transition: .4s ease-in-out;
+}
+
+.main .container .btn-hover:hover {
+    color: var(--text-link);
+}
+
+.main .container .btn .btn-android {
+    visibility: hidden;
+}
+
+
+/* study-group | voice connected | coach */
+
+.study-group {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.study-group .flex {
+    padding: 6rem 0;
+    justify-content: space-between;
+}
+
+.study-group .flex img {
+    max-width: 600px;
+}
+
+.study-group .flex .text {
+    max-width: 350px;
+}
+
+.study-group .flex .text h1 {
+    font-size: 3rem;
+    color: var(--dark-not-black);
+}
+
+.study-group .flex .text p {
+    color: var(--dark-not-black);
+}
+
+.voice-connected {
+    background-color: #e7e9eb;
+}
+
+/* chill */
+
+.chill {
+    max-width: 1500px;
+    margin: auto;
+    background-color: #e7e9eb;
+}
+
+.chill .flex {
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.chill .flex h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--dark-not-black);
+}
+
+.chill .flex p {
+    color: var(--dark-not-black);
+}
+
+/* download */
+
+.download {
+    max-width: 1500px;
+    margin: auto;
+    background-image: url(../img/bg-stars.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #e7e9eb;
+}
+
+.download .flex {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+}
+
+.download .flex .primary-btn {
+    background-color: var(--brand);
+    color: #ffffff;
+    transition: .4s ease-in-out;
+}
+
+.download .flex .primary-btn:hover {
+    background-color: #2e3ef0;
+}
+
+.download .flex .btn-android {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    max-width: 1500px;
+    margin: auto;
+    background-color: var(--dark-not-black);
+}
+
+footer .grid {
+    justify-content: space-between;
+    padding: 5rem 0 1rem 0;
+    align-items: flex-start;
+}
+
+footer .grid .social-main h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-top: 0;
+    color: var(--brand);
+}
+
+footer .grid .social-main {
+    max-width: 200px;
+}
+
+footer .grid .social-main .social img {
+    max-width: 40px;
+    padding: 0 5px;
+
+}
+
+footer .grid h3 {
+    color: var(--brand);
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.product ul li,
+.company ul li,
+.resources ul li,
+.policies ul li {
+    padding: .4rem 0;
+}
+
+.logo-footer .container {
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+
+.logo-footer .container h1 {
+    color: var(--white);
+    margin: 0;
+    cursor: pointer;
+}
+.logo-footer .container h1 .discord-logo{
+    width: 30px;
+}
+
+footer .container .footer-btn {
+    background-color: var(--brand);
+    transition: .4s ease-in-out;
+}
+
+footer .container .footer-btn:hover {
+    background-color: #2e3ef0;
+}
+
+footer .hr {
+    width: 80%;
+    margin: 2rem auto;
+    outline: none;
+    border: 1px solid var(--brand);
+}
+
+footer .grid ul li a {
+    padding: 5px 0;
+}
+
+footer .grid ul li a:hover {
+    border-bottom: 2px solid var(--focus-border);
+}
+
+footer .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "social-main product company resources policies"
+    ;
+}
+
+footer .grid .social-main {
+    grid-area: social-main;
+}
+
+footer .grid .product {
+    grid-area: product;
+}
+
+footer .grid .company {
+    grid-area: company;
+}
+
+footer .grid .resources {
+    grid-area: resources;
+}
+
+footer .grid .policies {
+    grid-area: policies;
+}
