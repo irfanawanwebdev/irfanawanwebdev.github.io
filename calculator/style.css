@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 100vh;
+
+}
+
+.btn {
+    width: 310px;
+    margin: auto;
+    height: 529px;
+    background-color: #000;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.text-area {
+    width: 100%;
+}
+
+.numbers {
+    background-color: rgb(5, 5, 5);
+    height: 5rem;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    padding: 0 1rem;
+    text-align: right;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    padding: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+    width: 100%;
+}
+.red{
+    background-color: rgb(214, 104, 104);
+}
+.data {
+    margin-top: 2rem;
+    display: grid;
+    background-color: rgb(76, 75, 79);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center;
+    grid-template-areas:
+    "clear sign cross divide"
+    "seven eight nine multi"
+    "four five six minus"
+    "one tow three plus"
+    "zero zero dot equal"
+    ;
+}
+.data-container{
+    background-color: rgb(76, 75, 79);
+    height: 510px;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.sign {
+    grid-area: sign;
+}
+
+.cross {
+    grid-area: cross;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.multi {
+    grid-area: multi;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+.plus {
+    grid-area: plus;
+}
+.zero {
+    grid-area: zero;
+}
+.dot {
+    grid-area: dot;
+    font-weight: bold;
+}
+.equal {
+    grid-area: equal;
+}
