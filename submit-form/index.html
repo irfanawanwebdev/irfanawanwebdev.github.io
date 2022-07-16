@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container flex">
+
+        <form class="pri-form" id="form" method="post" action="https://script.google.com/macros/s/AKfycbz1Dg-ncR42xB09tJr5FVfy4pajJ-kvcoZAREMZwT6ybgSNmJFwsvtJLVB5I_2e3QvgCQ/exec">
+            <label for="name">Name<sup>*</sup></label>
+            <input type="text" class="inp" name="name" placeholder="Your Name (max 10 words)" maxlength="10"
+                required>
+            <label for="user-name">User Name<sup>*</sup></label>
+            <input type="text" class="inp" id="user-name" name="user-name" placeholder="User Name (max 10 words)"
+                maxlength="10" required>
+            <label for="email">Email Address<sup>*</sup></label>
+            <input type="email" class="inp" name="email" placeholder="Your Email( max 25 words)"
+                maxlength="25" required>
+            <label for="password">Password<sup>*</sup></label>
+            <input type="password" class="inp" name="password" placeholder="Your Password (6 - 12 words)"
+                maxlength="12" minlength="6" required>
+
+            <div class="btn flex">
+                <input type="submit" value="Submit" class="pri-btn" id="btn-sub">
+            </div>
+            <!-- <p>We will send you a 4 digit code on your Email Address to verify your Email Account.</p> -->
+        </form>
+
+    </div>
+    <script>
+        window.addEventListener("load", function() {
+    const form = document.getElementById('form');
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      })
+      .then(() => {
+        alert("Your Form Has Been Successfully Submited!");
+      })
+    });
+  });
+    </script>
+</body>
+
+</html>
