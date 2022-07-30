@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans serif;
+}
+
+input {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    outline: none;
+    border: none;
+    width: 90%;
+    max-width: 350px;
+    border-radius: .6rem;
+    background-color: white;
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,.3);
+     
+}
+
+button{
+width: 90%;
+max-width: 350px;
+font-size: 1.2rem;
+    margin: .5rem 0;
+    padding: .7rem 2rem;
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+}
+
+button a{
+    color: white;
+    font-weight: 100;
+ 
+}
+.logo {
+margin: 1.5rem 0;
+    
+    
+}
+img{
+    width: 120px;
+    border-radius: 50%;
+}
+.contact-img{
+    border-radius: 0%;
+    margin: 1.5rem 0;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    
+    
+}
+.main{
+    max-width: 350px;
+}
+
+.blue{
+    font-size: 1.2rem;
+    color: darkblue;
+    text-align: center;
+    font-weight: 900;
+}
+.main .blue .bold{
+color: red;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.main .blue .regular {
+    font-size: 2rem;
+    color: red;
+    font-weight: 100;
+}
+.text{
+    text-align: center;
+    color: gray;
+    margin: 1rem 0;
+}
+
+.darkblue{
+    background-color: darkblue;
+}
+.bluebg{
+    background-color: blue;
+}
+.login{
+    text-align: center;
+    margin: 1rem 0;
+    color: gray;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+
+.signup{
+    margin-top: 1rem;
+}
+.enternum{
+    margin: 0 auto;
+}
+
+.resend {
+    color: green;
+    font-weight: bold;
+}
+.boxes{
+flex-direction: row;
+margin: 2rem;
+    
+}
+.code{
+    width: 50px;
+    height: 50px;
+    margin: 0 .5rem;
+    text-align: center;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
+}
+
+.arrow {
+    width: 25px;
+    position : absolute;
+    top: 0px;
+}
+.title{
+max-width: 350px;
+margin: 0 auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    position : relative;
+}
+.single-btn{
+    margin : 1rem;
+}
+
+label{
+    justify-content :flex-start;
+}
+.login-input{
+    margin: 0 0 1.5rem 0;
+}
+.label-login{
+    align-self: flex-start;
+    padding-left: 1.1rem;
+    padding-bottom: .5rem;
+    max-width: 350px;
+    marg
+}
+.login-blue{
+    margin : 1rem;
+}
+.img-login{
+    margin-top: 2.5rem;
+}
